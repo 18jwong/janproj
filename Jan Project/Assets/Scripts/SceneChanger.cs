@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu: MonoBehaviour
+public class SceneChanger: MonoBehaviour
 {
     //Pressing the Play Button causes Unity to load the next scene
-    public void PlayGame()
+    public void PlayNextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
