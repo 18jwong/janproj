@@ -27,10 +27,11 @@ GameObject:
   - component: {fileID: 65228759885187290}
   - component: {fileID: 65848367627095856}
   - component: {fileID: 65978872559740390}
+  - component: {fileID: 65446275010845940}
   - component: {fileID: 114030481299725864}
   m_Layer: 0
-  m_Name: Dude 1
-  m_TagString: Untagged
+  m_Name: Dude
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +129,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50.463135, y: 15.000004, z: 34.97988}
   m_Center: {x: 0, y: 7.5000005, z: -0.34006536}
+--- !u!65 &65446275010845940
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110830857926964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 70, y: 15.000004, z: 142.50003}
+  m_Center: {x: 0, y: 7.500002, z: 53.75001}
 --- !u!65 &65745442521144462
 BoxCollider:
   m_ObjectHideFlags: 1

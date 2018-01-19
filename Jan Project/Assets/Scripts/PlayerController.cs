@@ -17,26 +17,26 @@ public class PlayerController : MonoBehaviour {
 	void Update ()
     {
         //Move North Direction
-        if (Input.GetKey("w"))
+        if (Input.GetKey("w") || Input.GetKey("up"))
         {
             //Adds force north
             player.AddForce(0, 0, movementForce * Time.deltaTime);
         }
 
         //Move West Direction
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey("left"))
         {
             player.AddForce(-movementForce * Time.deltaTime, 0, 0);
         }
 
         //Move South Direction
-        if (Input.GetKey("s"))
+        if (Input.GetKey("s") || Input.GetKey("down"))
         {
             player.AddForce(0, 0, -movementForce * Time.deltaTime);
         }
 
         //Move East Direction
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") || Input.GetKey("right"))
         {
             player.AddForce(movementForce * Time.deltaTime, 0, 0);
         }
