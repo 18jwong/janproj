@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L1 - Tutorial.unity
     guid: 51a7cda934fdcf040a699e5485032ff2
+  - enabled: 1
+    path: Assets/Scenes/L2 - A Little Thinking.unity
+    guid: 9248210c9c7c65b4a824b904e3e98a04
