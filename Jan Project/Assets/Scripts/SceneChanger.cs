@@ -11,6 +11,12 @@ public class SceneChanger: MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    //Pressing Multiplayer loads up the Versus Mode
+    public void PlayVersusMode()
+    {
+        SceneManager.LoadScene("Versus Mode");
+    }
+
     //Pressing the Quit Button causes Unity to close the application
     public void QuitGame()
     {
