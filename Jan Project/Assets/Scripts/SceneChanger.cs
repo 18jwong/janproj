@@ -11,11 +11,32 @@ public class SceneChanger: MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    //Pressing Multiplayer loads up the Versus Mode
-    public void PlayVersusMode()
+	//Pressing Level 1 loads up level1
+	public void PlaySPL1()
+	{
+		SceneManager.LoadScene("L1 - Tutorial");
+	}
+	//Pressing Level 2 loads up level2
+	public void PlaySPL2()
+	{
+		SceneManager.LoadScene("L2 - A Little Thinking");
+	}
+
+    //Pressing Multiplayer loads up the 2 Player Versus Mode
+    public void PlayMP2P()
     {
-        SceneManager.LoadScene("Versus Mode");
+        SceneManager.LoadScene("V2 - Versus");
     }
+	//Pressing Multiplayer loads up the 3 Player Versus Mode
+	public void PlayMP3P()
+	{
+		SceneManager.LoadScene("V3 - Versus");
+	}
+	//Pressing Multiplayer loads up the 4 Player Versus Mode
+	public void PlayMP4P()
+	{
+		SceneManager.LoadScene("V4 - Versus");
+	}
 
     //Pressing the Quit Button causes Unity to close the application
     public void QuitGame()

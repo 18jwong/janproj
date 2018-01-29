@@ -6,12 +6,19 @@ using TMPro;
 public class TextFadeAway : MonoBehaviour {
 
     public TextMeshProUGUI text;
+	public float time = 8f;
+	public bool fadeIn = true;
 
     // Assigns this script's text to 'text'
-    void Start () {
+    void Awake () {
         text = GetComponent<TextMeshProUGUI>();
-        StartCoroutine(FadeTextToZeroAlpha(8f, text));
-    }
+		if (fadeIn == true) {
+			StartCoroutine (FadeTextToZeroAlpha (time, text));
+		} else if (fadeIn == false) {
+			StartCoroutine (FadeTextToFullAlpha (time, text));
+			StartCoroutine (FadeTextToZeroAlpha (time, text));
+		}
+	}
 
     public IEnumerator FadeTextToFullAlpha(float t, TextMeshProUGUI i)
     {
