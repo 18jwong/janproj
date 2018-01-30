@@ -15,12 +15,19 @@ public class SceneChanger: MonoBehaviour
 	public void PlaySPL1()
 	{
 		SceneManager.LoadScene("L1 - Tutorial");
-	}
+        if(SoundPersist.instance != null) {
+            SoundPersist.instance.music.Play();
+        }
+    }
 	//Pressing Level 2 loads up level2
 	public void PlaySPL2()
 	{
 		SceneManager.LoadScene("L2 - A Little Thinking");
-	}
+        if (SoundPersist.instance != null)
+        {
+            SoundPersist.instance.music.Play();
+        }
+    }
 
     //Pressing Multiplayer loads up the 2 Player Versus Mode
     public void PlayMP2P()

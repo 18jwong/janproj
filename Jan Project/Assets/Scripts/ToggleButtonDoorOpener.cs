@@ -23,19 +23,16 @@ public class ToggleButtonDoorOpener : MonoBehaviour {
 			if(firstState == true){
 				door1.transform.position = secondPositionDoor1;
 				door2.transform.position = secondPositionDoor2;
-				Debug.Log ("2nd Position");
 			}
 
 			//Changes from door position 2 to 1
 			else if(firstState == false){
 				door1.transform.position = firstPositionDoor1;
 				door2.transform.position = firstPositionDoor2;
-				Debug.Log ("1st Position");
 			}
 
 			//Alternates firstState boolean
 			firstState = !firstState;
-			Debug.Log ("alternating");
 		}
 	}
 }

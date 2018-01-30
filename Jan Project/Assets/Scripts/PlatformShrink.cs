@@ -12,14 +12,14 @@ public class PlatformShrink : MonoBehaviour {
 	void Update () {
 		//Shrinks Platform in the x direction
 		if (transform.localScale.x > 0) {
-			transform.localScale += new Vector3 (scaleX, 0, 0);
+			transform.localScale += new Vector3 (scaleX * Time.deltaTime, 0, 0);
 			scaleX *= scaleMultiplier;
 
 		}
 
 		//Shrinks platform in the z direction
 		if (transform.localScale.z > 0) {
-			transform.localScale += new Vector3 (0, 0, scaleZ);
+			transform.localScale += new Vector3 (0, 0, scaleZ * Time.deltaTime);
 			scaleZ *= scaleMultiplier;
 		}
 

@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625dd9328b2877243bdde6993c85be17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleX: -0.00049
-  scaleZ: -0.00049
+  scaleX: -0.025
+  scaleZ: -0.025
   scaleMultiplier: 1
