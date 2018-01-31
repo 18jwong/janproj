@@ -24,11 +24,11 @@ public class PlatformShrink : MonoBehaviour {
 		}
 
 		//Makes sure platform does not go negative
-		if (transform.localScale.x < 0){
-			transform.localScale = new Vector3 (0, 0, transform.localScale.z);
+		if (transform.localScale.x <= 0){
+            Destroy(gameObject);
 		}
-		if (transform.localScale.z < 0){
-			transform.localScale = new Vector3 (transform.localScale.x, 0, 0);
-		}
+		if (transform.localScale.z <= 0){
+            Destroy(gameObject);
+        }
 	}
 }

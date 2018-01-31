@@ -782,6 +782,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 2000
   rotationSpeed: 180
+  ballPrefab: {fileID: 1015869884294812, guid: 58a683f10e29bdf429bf3324665d5cc6, type: 2}
+  ballSpawn: {fileID: 1590641415}
+  destroyTime: 10
 --- !u!1 &1173797358
 GameObject:
   m_ObjectHideFlags: 0
