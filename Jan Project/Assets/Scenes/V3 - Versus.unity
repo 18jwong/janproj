@@ -806,6 +806,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 2000
   rotationSpeed: 180
+  ballPrefab: {fileID: 1015869884294812, guid: 58a683f10e29bdf429bf3324665d5cc6, type: 2}
+  ballSpawn: {fileID: 1197517911}
+  destroyTime: 5
 --- !u!1 &1098615573 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1110830857926964, guid: 534bbcd6e38cd024380339438b195a4e,
@@ -824,6 +827,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 2000
   rotationSpeed: 180
+  ballPrefab: {fileID: 1015869884294812, guid: 58a683f10e29bdf429bf3324665d5cc6, type: 2}
+  ballSpawn: {fileID: 1590641415}
+  destroyTime: 5
 --- !u!1 &1173797358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementForce: 2000
   rotationSpeed: 180
+  ballPrefab: {fileID: 1015869884294812, guid: 58a683f10e29bdf429bf3324665d5cc6, type: 2}
+  ballSpawn: {fileID: 1397936170}
+  destroyTime: 5
 --- !u!4 &1397936170 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4249203522074658, guid: 534bbcd6e38cd024380339438b195a4e,
