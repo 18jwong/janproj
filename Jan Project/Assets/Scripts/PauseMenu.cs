@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour {
 
 	public GameObject pauseMenuUI;
 
+    public AudioSource music;
     public GameObject canvas;
     public GameObject FadeText;
 
@@ -37,9 +38,13 @@ public class PauseMenu : MonoBehaviour {
         FadeText.SetActive(false);
 		Time.timeScale = 1f;
         GameIsPaused = false;
-        if (SoundPersist.instance != null)
+        if (SoundPersist.instance != null && SceneManager.GetActiveScene().name == "L2 - A Little Thinking" || SceneManager.GetActiveScene().name == "L1 - Tutorial")
         {
             SoundPersist.instance.music.Play();
+        }
+        if (SceneManager.GetActiveScene().name == "V2 - Versus" || SceneManager.GetActiveScene().name == "V3 - Versus" || SceneManager.GetActiveScene().name == "V4 - Versus")
+        {
+            music.Play();
         }
     }
 
@@ -48,8 +53,11 @@ public class PauseMenu : MonoBehaviour {
         canvas.SetActive(false);
 		Time.timeScale = 0f;
 		GameIsPaused = true;
-        if (SoundPersist.instance != null) {
+        if (SoundPersist.instance != null && SceneManager.GetActiveScene().name == "L2 - A Little Thinking" || SceneManager.GetActiveScene().name == "L1 - Tutorial") {
             SoundPersist.instance.music.Pause();
+        }
+        if (SceneManager.GetActiveScene().name == "V2 - Versus" || SceneManager.GetActiveScene().name == "V3 - Versus" || SceneManager.GetActiveScene().name == "V4 - Versus") {
+            music.Pause();
         }
 	}
 
